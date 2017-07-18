@@ -1,0 +1,23 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+EvtChar	../tmp_test_serial.py	/^    def EvtChar(self, event):$/;"	kind:member	line:51
+EvtCheckBox	../tmp_test_serial.py	/^    def EvtCheckBox(self, event):$/;"	kind:member	line:54
+EvtComboBox	../tmp_test_serial.py	/^    def EvtComboBox(self, event):$/;"	kind:member	line:45
+EvtRadioBox	../tmp_test_serial.py	/^    def EvtRadioBox(self, event):$/;"	kind:member	line:43
+EvtText	../tmp_test_serial.py	/^    def EvtText(self, event):$/;"	kind:member	line:49
+ExamplePanel	../tmp_test_serial.py	/^class ExamplePanel(wx.Panel):$/;"	kind:class	line:6
+OnClick	../tmp_test_serial.py	/^    def OnClick(self,event):$/;"	kind:member	line:47
+SerialPorts	../tmp_test_serial.py	/^def SerialPorts():$/;"	kind:function	line:57
+__init__	../tmp_test_serial.py	/^    def __init__(self, parent):$/;"	kind:member	line:7
+app	../tmp_test_serial.py	/^app = wx.App(False)$/;"	kind:variable	line:86
+frame	../tmp_test_serial.py	/^frame = wx.Frame(None)$/;"	kind:variable	line:87
+glob	../tmp_test_serial.py	/^import glob$/;"	kind:namespace	line:2
+panel	../tmp_test_serial.py	/^panel = ExamplePanel(frame)$/;"	kind:variable	line:88
+serial	../tmp_test_serial.py	/^import serial$/;"	kind:namespace	line:3
+sys	../tmp_test_serial.py	/^import sys$/;"	kind:namespace	line:1
+tmp_test_serial.py	../tmp_test_serial.py	1;"	kind:file	line:1
+wx	../tmp_test_serial.py	/^import wx$/;"	kind:namespace	line:4
