@@ -47,6 +47,9 @@ class CubeCanvas(MyCanvasBase):
         self.roll = 0
         self.yaw = 0
 
+    def ForcePaint(self, event=None):
+        self.Refresh()
+
     def InitGL(self):
         # set viewing projection
         glMatrixMode(GL_PROJECTION)
@@ -77,6 +80,10 @@ class CubeCanvas(MyCanvasBase):
         """ Use openGL to draw into the back buffer, then swap buffers to display on screen """
         if not self.init:
             return
+    
+        self.pitch += 2
+        if self.pitch > 360:
+            self.pitch = 0
 
         # clear color and depth buffers
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
@@ -109,8 +116,8 @@ class CubeCanvas(MyCanvasBase):
         glNormal3f(-0.707, 0.0, -0.707)
         glVertex3f(-6.0, 0.5, 5.0)
         glVertex3f(-6.0, -0.5, 5.0)
-        glVertex3f(5.0, 0.5, -6.0)
         glVertex3f(5.0, -0.5, -6.0)
+        glVertex3f(5.0, 0.5, -6.0)
 
         # Front Face
         glNormal3f(-0.707, 0.0, 0.707)
