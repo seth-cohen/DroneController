@@ -4,20 +4,70 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-EvtChar	../tmp_test_serial.py	/^    def EvtChar(self, event):$/;"	kind:member	line:51
-EvtCheckBox	../tmp_test_serial.py	/^    def EvtCheckBox(self, event):$/;"	kind:member	line:54
-EvtComboBox	../tmp_test_serial.py	/^    def EvtComboBox(self, event):$/;"	kind:member	line:45
-EvtRadioBox	../tmp_test_serial.py	/^    def EvtRadioBox(self, event):$/;"	kind:member	line:43
-EvtText	../tmp_test_serial.py	/^    def EvtText(self, event):$/;"	kind:member	line:49
-ExamplePanel	../tmp_test_serial.py	/^class ExamplePanel(wx.Panel):$/;"	kind:class	line:6
-OnClick	../tmp_test_serial.py	/^    def OnClick(self,event):$/;"	kind:member	line:47
-SerialPorts	../tmp_test_serial.py	/^def SerialPorts():$/;"	kind:function	line:57
-__init__	../tmp_test_serial.py	/^    def __init__(self, parent):$/;"	kind:member	line:7
-app	../tmp_test_serial.py	/^app = wx.App(False)$/;"	kind:variable	line:86
-frame	../tmp_test_serial.py	/^frame = wx.Frame(None)$/;"	kind:variable	line:87
+AppFrame	../tmp_test_serial.py	/^class AppFrame(wx.Frame):$/;"	kind:class	line:30
+ConnectToSerial	../tmp_test_serial.py	/^    def ConnectToSerial(self):$/;"	kind:member	line:192
+ConnectionPanel	../tmp_test_serial.py	/^class ConnectionPanel(wx.Panel):$/;"	kind:class	line:111
+ControlsPanel	../tmp_test_serial.py	/^class ControlsPanel(wx.Panel):$/;"	kind:class	line:211
+CubeCanvas	../tmp_gl_canvas.py	/^class CubeCanvas(MyCanvasBase):$/;"	kind:class	line:40
+CubeCanvas	../tmp_test_serial.py	/^from tmp_gl_canvas import CubeCanvas$/;"	kind:namespace	line:9
+DisconnectEvent	../tmp_test_serial.py	/^class DisconnectEvent(wx.PyEvent):$/;"	kind:class	line:24
+EVT_DISCONNECT_ID	../tmp_test_serial.py	/^EVT_DISCONNECT_ID = wx.NewId()$/;"	kind:variable	line:14
+EVT_RESULT_ID	../tmp_test_serial.py	/^EVT_RESULT_ID = wx.NewId()$/;"	kind:variable	line:13
+ForcePaint	../tmp_gl_canvas.py	/^    def ForcePaint(self, event=None):$/;"	kind:member	line:50
+HorizontalControlGauge	../control_gauge.py	/^class HorizontalControlGauge(wx.Panel):$/;"	kind:class	line:4
+HorizontalLabeledGauge	../control_gauge.py	/^class HorizontalLabeledGauge(wx.Panel):$/;"	kind:class	line:43
+HorizontalLabeledGauge	../tmp_test_serial.py	/^from control_gauge import HorizontalLabeledGauge$/;"	kind:namespace	line:7
+InitGL	../tmp_gl_canvas.py	/^    def InitGL(self):$/;"	kind:member	line:53
+MyCanvasBase	../tmp_gl_canvas.py	/^class MyCanvasBase(glcanvas.GLCanvas):$/;"	kind:class	line:11
+OnBaudSelect	../tmp_test_serial.py	/^    def OnBaudSelect(self, event):$/;"	kind:member	line:163
+OnConnect	../tmp_test_serial.py	/^    def OnConnect(self, event):$/;"	kind:member	line:168
+OnDisconnect	../tmp_test_serial.py	/^    def OnDisconnect(self, event):$/;"	kind:member	line:179
+OnDraw	../tmp_gl_canvas.py	/^    def OnDraw(self, event=None):$/;"	kind:member	line:79
+OnEraseBackground	../tmp_gl_canvas.py	/^    def OnEraseBackground(self, event):$/;"	kind:member	line:22
+OnLogMessage	../tmp_test_serial.py	/^    def OnLogMessage(self, message):$/;"	kind:member	line:71
+OnPaint	../control_gauge.py	/^    def OnPaint(self, event):$/;"	kind:member	line:22
+OnPaint	../tmp_gl_canvas.py	/^    def OnPaint(self, event):$/;"	kind:member	line:32
+OnPortSelect	../tmp_test_serial.py	/^    def OnPortSelect(self, event):$/;"	kind:member	line:158
+OnReceiveData	../tmp_test_serial.py	/^    def OnReceiveData(self, event):$/;"	kind:member	line:207
+OnRefresh	../tmp_test_serial.py	/^    def OnRefresh(self, event):$/;"	kind:member	line:187
+OnSerialConnect	../tmp_test_serial.py	/^    def OnSerialConnect(self):$/;"	kind:member	line:79
+OnSerialDisconnect	../tmp_test_serial.py	/^    def OnSerialDisconnect(self):$/;"	kind:member	line:75
+OnSize	../control_gauge.py	/^    def OnSize(self, event):$/;"	kind:member	line:33
+OnSize	../tmp_gl_canvas.py	/^    def OnSize(self, event):$/;"	kind:member	line:25
+ParseMessage	../tmp_test_serial.py	/^    def ParseMessage(self, packet):$/;"	kind:member	line:84
+ResultEvent	../tmp_test_serial.py	/^class ResultEvent(wx.PyEvent):$/;"	kind:class	line:16
+SerialPorts	../tmp_test_serial.py	/^def SerialPorts():$/;"	kind:function	line:266
+SerialThread	../tmp_test_serial.py	/^class SerialThread(Thread):$/;"	kind:class	line:233
+SetOrientation	../tmp_gl_canvas.py	/^    def SetOrientation(self, pitch, roll, yaw):$/;"	kind:member	line:197
+SetValue	../control_gauge.py	/^    def SetValue(self, value):$/;"	kind:member	line:37
+SetValue	../control_gauge.py	/^    def SetValue(self, value):$/;"	kind:member	line:59
+StartRender	../tmp_gl_canvas.py	/^    def StartRender(self):$/;"	kind:member	line:71
+StopRender	../tmp_gl_canvas.py	/^    def StopRender(self):$/;"	kind:member	line:75
+__init__	../control_gauge.py	/^    def __init__(self, parent, extents=(0, 100), value=0):$/;"	kind:member	line:6
+__init__	../control_gauge.py	/^    def __init__(self, parent, label, size=(200, 30), extents=(0, 100), value=0):$/;"	kind:member	line:45
+__init__	../tmp_gl_canvas.py	/^    def __init__(self, parent):$/;"	kind:member	line:12
+__init__	../tmp_gl_canvas.py	/^    def __init__(self, parent):$/;"	kind:member	line:41
+__init__	../tmp_test_serial.py	/^    def __init__(self):$/;"	kind:member	line:26
+__init__	../tmp_test_serial.py	/^    def __init__(self, data):$/;"	kind:member	line:18
+__init__	../tmp_test_serial.py	/^    def __init__(self, guiWindow, serialPort):$/;"	kind:member	line:235
+__init__	../tmp_test_serial.py	/^    def __init__(self, parent):$/;"	kind:member	line:113
+__init__	../tmp_test_serial.py	/^    def __init__(self, parent):$/;"	kind:member	line:213
+__init__	../tmp_test_serial.py	/^    def __init__(self, parent, size):$/;"	kind:member	line:32
+abort	../tmp_test_serial.py	/^    def abort(self):$/;"	kind:member	line:262
+app	../tmp_test_serial.py	/^app = wx.App(False)$/;"	kind:variable	line:294
+control_gauge.py	../control_gauge.py	1;"	kind:file	line:1
+frame	../tmp_test_serial.py	/^frame = AppFrame(None, size=(1000, 1000))$/;"	kind:variable	line:295
+glcanvas	../tmp_gl_canvas.py	/^from wx import glcanvas$/;"	kind:namespace	line:4
 glob	../tmp_test_serial.py	/^import glob$/;"	kind:namespace	line:2
-panel	../tmp_test_serial.py	/^panel = ExamplePanel(frame)$/;"	kind:variable	line:88
+pub	../tmp_test_serial.py	/^from wx.lib.pubsub import pub$/;"	kind:namespace	line:10
+re	../tmp_test_serial.py	/^import re$/;"	kind:namespace	line:5
+run	../tmp_test_serial.py	/^    def run(self):$/;"	kind:member	line:242
 serial	../tmp_test_serial.py	/^import serial$/;"	kind:namespace	line:3
+sys	../tmp_gl_canvas.py	/^import sys$/;"	kind:namespace	line:2
 sys	../tmp_test_serial.py	/^import sys$/;"	kind:namespace	line:1
+time	../tmp_test_serial.py	/^import time$/;"	kind:namespace	line:6
+tmp_gl_canvas.py	../tmp_gl_canvas.py	1;"	kind:file	line:1
 tmp_test_serial.py	../tmp_test_serial.py	1;"	kind:file	line:1
+wx	../control_gauge.py	/^import wx$/;"	kind:namespace	line:2
+wx	../tmp_gl_canvas.py	/^import wx$/;"	kind:namespace	line:1
 wx	../tmp_test_serial.py	/^import wx$/;"	kind:namespace	line:4

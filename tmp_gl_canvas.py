@@ -81,10 +81,6 @@ class CubeCanvas(MyCanvasBase):
         if not self.init:
             return
     
-        self.pitch += 2
-        if self.pitch > 360:
-            self.pitch = 0
-
         # clear color and depth buffers
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 

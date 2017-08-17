@@ -95,7 +95,7 @@ class AppFrame(wx.Frame):
             commandLength = len(self.commands)
             self.logger.AppendText(packet.replace('\r', ''))
             parsedData = re.split('=|,', command.replace(' ', ''))
-            if len(parsedData) == 10:
+            if len(parsedData) == 14:
                 pitch = -int(parsedData[1]) / 1000
                 roll = -int(parsedData[3]) / 1000
                 yaw = int(parsedData[5]) / 1000
@@ -103,6 +103,8 @@ class AppFrame(wx.Frame):
 
                 self.controlsPanel.throttleGauge.SetValue(int(parsedData[7]))
                 self.controlsPanel.pitchGauge.SetValue(int(parsedData[9]))
+                self.controlsPanel.yawGauge.SetValue(int(parsedData[11]))
+                self.controlsPanel.rollGauge.SetValue(int(parsedData[13]))
             else:
                 self.logger.AppendText('----------Bad Data----------\n')
 
@@ -217,8 +219,14 @@ class ControlsPanel(wx.Panel):
         self.throttleGauge = HorizontalLabeledGauge(self, 'Throttle', extents=(1000, 2000), value=1200)
         vSizer.Add(self.throttleGauge, 0, wx.ALL, 5)
 
-        self.pitchGauge = HorizontalLabeledGauge(self, 'Pitch', extents=(1000, 2000), value=1500)
+        self.pitchGauge = HorizontalLabeledGauge(self, 'Pitch', extents=(1000, 2000), value=1200)
         vSizer.Add(self.pitchGauge, 0, wx.ALL, 5)
+
+        self.yawGauge = HorizontalLabeledGauge(self, 'Yaw', extents=(1000, 2000), value=1200)
+        vSizer.Add(self.yawGauge, 0, wx.ALL, 5)
+
+        self.rollGauge = HorizontalLabeledGauge(self, 'Roll', extents=(1000, 2000), value=1200)
+        vSizer.Add(self.rollGauge, 0, wx.ALL, 5)
 
         self.SetSizerAndFit(vSizer)
 
