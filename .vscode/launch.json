@@ -6,7 +6,7 @@
       "type": "python",
       "request": "launch",
       "stopOnEntry": true,
-      "pythonPath": "/Users/sethcohen/Documents/Drone/FlightInspectorEnv/bin/python",
+      "pythonPath": "/Users/sethcohen/Documents/Drone/frameworkpython",
       "program": "${file}",
       "cwd": "${workspaceRoot}",
       "env": {},

@@ -257,7 +257,8 @@ class SerialThread(Thread):
             except:
                 self._shouldAbort = 1                
         self.serialPort = None
-        wx.PostEvent(self.guiWindow, DisconnectEvent())
+        if self.guiWindow is not None:
+            wx.PostEvent(self.guiWindow, DisconnectEvent())
 
     def abort(self):
         """ Kill the thread - called by the gui """
